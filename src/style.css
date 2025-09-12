@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* Navegación */
+  .nav-link {
+    @apply text-white hover:text-red-600 px-4 py-2 transition-colors duration-300 relative;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #dc2626;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Galería */
+  .gallery-item {
+    @apply relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer;
+  }
+  
+  .gallery-item img {
+    @apply transition-transform duration-300;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .gallery-overlay {
+    @apply absolute inset-0 bg-red-600/60 flex items-center justify-center opacity-0 transition-opacity duration-300;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  /* Modales */
+  .modal {
+    @apply fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4 hidden;
+  }
+  
+  .modal.show {
+    display: flex;
+  }
+  
+  /* Utilidades personalizadas para colores de tatuaje */
+  .bg-tattoo-red {
+    @apply bg-red-600;
+  }
+  
+  .bg-tattoo-red-dark {
+    @apply bg-red-700;
+  }
+  
+  .text-tattoo-red {
+    @apply text-red-500;
+  }
+  
+  .hover\:bg-tattoo-red:hover {
+    @apply hover:bg-red-600;
+  }
+  
+  .hover\:bg-tattoo-red-dark:hover {
+    @apply hover:bg-red-700;
+  }
+  
+  .hover\:text-tattoo-red:hover {
+    @apply hover:text-red-500;
+  }
+  
+  .focus\:border-tattoo-red:focus {
+    @apply focus:border-red-600;
+  }
+}
+
+/* Animaciones suaves */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Mejoras de accesibilidad */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--tattoo-red);
+  outline-offset: 2px;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+.font-japanese {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+/* Mejoras responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 1rem;
+  }
+}
+
