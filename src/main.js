@@ -88,3 +88,65 @@ document.addEventListener('DOMContentLoaded', function() {
   
   console.log('Página cargada correctamente');
 });
+
+// Funcionalidad del menú hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const closeMenuButton = document.getElementById('close-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOverlay = document.getElementById('menu-overlay');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  // Función para abrir el menú
+  function openMobileMenu() {
+    mobileMenu.classList.add('open');
+    menuOverlay.classList.add('active');
+    mobileMenuButton.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Función para cerrar el menú
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+    menuOverlay.classList.remove('active');
+    mobileMenuButton.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Event listener para el botón hamburguesa
+  mobileMenuButton.addEventListener('click', function() {
+    if (mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  // Event listener para el botón X
+  closeMenuButton.addEventListener('click', closeMobileMenu);
+
+  // Cerrar menú al hacer clic en el overlay
+  menuOverlay.addEventListener('click', closeMobileMenu);
+
+  // Cerrar menú al hacer clic en un enlace
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      closeMobileMenu();
+    });
+  });
+
+  // Cerrar menú con la tecla Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Cerrar menú al cambiar el tamaño de pantalla a desktop
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768 && mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
+});
+

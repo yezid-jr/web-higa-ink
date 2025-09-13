@@ -6,49 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio - Tatuajes</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body class="bg-black text-white">
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-black/10 backdrop-blur-sm border-b-2 border-red-600/35">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
+            <!-- Layout Desktop: Logo - Links - Botón -->
+            <div class="hidden md:flex items-center justify-between py-4">
+                <!-- Logo izquierda (Desktop) -->
                 <div class="flex items-center">
-                    <div class="w-25 h-15  flex items-center justify-center overflow-hidden">
-                        <img src="./src/imgs/higa-logo.ico" alt="Logo Studio"
-                            class="w-full h-full object-contain">
+                    <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
+                        <img src="./src/imgs/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
                     </div>
                     <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
                 </div>
 
-                <nav class="hidden md:flex space-x-8">
+                <!-- Navegación centro (Desktop) -->
+                <nav class="flex space-x-8">
                     <a href="#portfolio" class="nav-link text-white hover:text-tattoo-red px-4 py-2">Portafolio</a>
                     <a href="#about" class="nav-link text-white hover:text-tattoo-red px-4 py-2">Sobre Mí</a>
                     <a href="#contact" class="nav-link text-white hover:text-tattoo-red px-4 py-2">Contacto</a>
                 </nav>
 
+                <!-- Botón derecha (Desktop) -->
                 <button
                     class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105">
                     Reservar Cita
                 </button>
             </div>
-        </div>
+
+            <!-- Layout Mobile: Hamburguesa - Logo - Botón -->
+            <div class="md:hidden flex items-center justify-between py-4">
+                <!-- Botón Hamburguesa (Mobile) -->
+                <button id="mobile-menu-button" class="hamburger flex flex-col space-y-1 p-2">
+                    <span class="hamburger-line block w-6 h-1 bg-white"></span>
+                    <span class="hamburger-line block w-6 h-1 bg-white"></span>
+                    <span class="hamburger-line block w-6 h-1 bg-white"></span>
+                </button>
+
+                <!-- Logo centro (Mobile) -->
+                <div class="flex items-center">
+                    <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
+                        <img src="./src/imgs/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
+                    </div>
+                    <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
+                </div>
+
+                <!-- Botón derecha (Mobile) -->
+                <button
+                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-3 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105 text-sm">
+                    Reservar
+                </button>
+            </div>
+
+            <!-- Menú Mobile -->
+            <div id="mobile-menu" class="mobile-menu md:hidden fixed left-0 top-0 w-64 h-full">
+                <div class="flex flex-col p-6 pt-20 bg-black/95 backdrop-blur-sm">
+
+                    <a href="#portfolio"
+                        class="mobile-menu-link text-white hover:text-tattoo-red py-3 text-lg border-b border-gray-700">Portafolio</a>
+                    <a href="#about"
+                        class="mobile-menu-link text-white hover:text-tattoo-red py-3 text-lg border-b border-gray-700">Sobre
+                        Mí</a>
+                    <a href="#contact"
+                        class="mobile-menu-link text-white hover:text-tattoo-red py-3 text-lg border-b border-gray-700">Contacto</a>
+                    <button
+                        class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-3 rounded-md font-medium mt-6 transition-all duration-300">
+                        Reservar Cita
+                    </button>
+                    <button id="close-menu-button"></button>
+                </div>
+            </div>
+
+            <!-- Overlay para cerrar el menú -->
+            <div id="menu-overlay" class="menu-overlay md:hidden fixed inset-0"> </div>
+
     </header>
 
     <!-- Hero Section -->
-    <section class="py-20 px-4 text-center bg-gradient-to-b from-black to-gray-900 ">
+    <section class="py-30 px-4 text-center bg-gradient-to-b from-black to-gray-900">
+        <img src="./src/imgs/tattoo-machine.png" alt="Máquina de tatuar"
+            class="hero-image">
+
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-                Arte que marca
-                <span class="text-tattoo-red">xd</span>
+            <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6">
+                Sentimientos hechos
+                <span class="text-tattoo-red">Arte</span>
             </h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae culpa iure suscipit atque quasi ab illo
-                ullam eveniet repudiandae natus harum optio deleniti possimus, laboriosam error rem, ex, dolore maiores!
+            <p class="text-xl text-gray-300 mb-8 max-w-1xl mx-auto leading-relaxed">
+                Un tatuaje significa llevar a la piel emociones, decisiones y formas de expresión personal.<br>
+                Para algunos, es un acto valiente que marca un antes y un después en sus vidas. <br>
+                Otros, es una busqueda de estetica y estilo único. <br>
+                Sea cual sea tu razón, estoy aquí para ayudarte a plasmarla en tu piel con creatividad y profesionalismo.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button class="bg-tattoo-red-dark hover:bg-tattoo-red text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
+                <button
+                    class="bg-tattoo-red-dark hover:bg-tattoo-red text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 hover:scale-105">
                     Ver Portafolio
                 </button>
                 <button
@@ -60,7 +116,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4 bg-gray-900">
+    <section id="portfolio" class="py-20 px-4 bg-gray-900 relative z-10">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h3 class="text-4xl font-bold mb-4">Mi Trabajo</h3>
