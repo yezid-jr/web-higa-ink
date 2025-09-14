@@ -133,22 +133,6 @@ html {
 }
 
 
-@media (max-width: 1024px) {
-  .hero-image {
-    left: 40px;
-    width: 750px;
-    height: auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-image {
-    left: 20px;
-    width: 800px;
-    height: 300;
-  }
-}
-
 @layer components {
 
   /* Navegación */
@@ -303,8 +287,21 @@ html {
   transform: scale(1.1);
 }
 
+@media (max-width: 1024px) {
+  .hero-image {
+    left: 40px;
+    width: 750px;
+    height: auto;
+  }
+}
+
 /* Asegurar que el logo permanezca centrado en mobile */
 @media (max-width: 640px) {
+  .hero-image {
+    left: 20px;
+    width: 800px;
+    height: 300;
+  }
   .flex.items-center.absolute {
     position: absolute;
     left: 50%;
