@@ -19,7 +19,7 @@
                 <!-- Logo izquierda (Desktop) -->
                 <div class="flex items-center">
                     <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
-                        <img src="/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
+                        <img src="./img/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
                     </div>
                     <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
                 </div>
@@ -32,10 +32,10 @@
                 </nav>
 
                 <!-- Botón derecha (Desktop) -->
-                <button
-                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105">
+                <a href="#contact"
+                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center cursor-pointer">
                     Reservar Cita
-                </button>
+                </a>
             </div>
 
             <!-- Layout Mobile: Hamburguesa - Logo - Botón -->
@@ -50,16 +50,16 @@
                 <!-- Logo centro (Mobile) -->
                 <div class="flex items-center">
                     <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
-                        <img src="/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
+                        <img src="./img/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
                     </div>
                     <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
                 </div>
 
                 <!-- Botón derecha (Mobile) -->
-                <button
-                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-3 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105 text-sm">
+                <a href="#contact"
+                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-3 py-2 rounded-md font-medium transition-all duration-300 hover:scale-105 text-sm flex items-center justify-center cursor-pointer">
                     Reservar
-                </button>
+                </a>
             </div>
 
             <!-- Menú Mobile -->
@@ -73,10 +73,10 @@
                         Mí</a>
                     <a href="#contact"
                         class="mobile-menu-link text-white hover:text-tattoo-red py-3 text-lg border-b border-gray-700">Contacto</a>
-                    <button
-                        class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-3 rounded-md font-medium mt-6 transition-all duration-300">
+                    <a href="#contact"
+                        class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-4 py-3 rounded-md font-medium mt-6 transition-all duration-300 flex items-center justify-center cursor-pointer">
                         Reservar Cita
-                    </button>
+                    </a>
                     <button id="close-menu-button"></button>
                 </div>
             </div>
@@ -88,7 +88,7 @@
 
     <!-- Hero Section -->
     <section class="py-30 px-4 text-center bg-gradient-to-b from-black to-gray-900">
-        <img src="./public/tattoo-machine.png" alt="Máquina de tatuar" class="hero-image">
+        <img src="./img/tattoo-machine.png" alt="Máquina de tatuar" class="hero-image">
 
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6">
@@ -128,7 +128,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal1')">
-                    <img src="/public/anime-tattoo.webp" alt="Tatuaje Geométrico"
+                    <img src="./img/anime-tattoo.webp" alt="Tatuaje Geométrico"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -137,7 +137,7 @@
 
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal2')">
-                    <img src="/public/blackwork-tattoo.webp" alt="Tatuaje Realista"
+                    <img src="./img/blackwork-tattoo.webp" alt="Tatuaje Realista"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -146,7 +146,7 @@
 
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal3')">
-                    <img src="/public/small-tattoo.webp" alt="Tatuaje Floral"
+                    <img src="./img/small-tattoo.webp" alt="Tatuaje Floral"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -155,7 +155,7 @@
 
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal4')">
-                    <img src="/public/dark-tattoo.webp" alt="Tatuaje Tradicional"
+                    <img src="./img/dark-tattoo.webp" alt="Tatuaje Tradicional"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -164,7 +164,7 @@
 
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal5')">
-                    <img src="/public/flash-tattoo.webp" alt="Tatuaje Minimalista"
+                    <img src="./img/flash-tattoo.webp" alt="Tatuaje Minimalista"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -173,7 +173,7 @@
 
                 <div class="gallery-item relative bg-gray-700 rounded-lg overflow-hidden cursor-pointer group"
                     onclick="openModal('modal6')">
-                    <img src="/public/letters-tattoo.webp" alt="Tatuaje Abstracto"
+                    <img src="./img/letters-tattoo.webp" alt="Tatuaje Abstracto"
                         class="w-full h-80 object-cover transition-transform duration-300">
                     <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
                         <span class="text-white font-semibold">Ver Detalles</span>
@@ -193,7 +193,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/anime-tattoo.webp" alt="Tatuaje Geométrico"
+                        <img src="./img/anime-tattoo.webp" alt="Tatuaje Geométrico"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -237,7 +237,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/blackwork-tattoo.webp" alt="Tatuaje Realista"
+                        <img src="./img/blackwork-tattoo.webp" alt="Tatuaje Realista"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -280,7 +280,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/small-tattoo.webp" alt="Tatuaje Floral"
+                        <img src="./img/small-tattoo.webp" alt="Tatuaje Floral"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -323,7 +323,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/dark-tattoo.webp" alt="Tatuaje Tradicional"
+                        <img src="./img/dark-tattoo.webp" alt="Tatuaje Tradicional"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -366,7 +366,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/flash-tattoo.webp" alt="Tatuaje Minimalista"
+                        <img src="./img/flash-tattoo.webp" alt="Tatuaje Minimalista"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -409,7 +409,7 @@
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="/letters-tattoo.webp" alt="Tatuaje Abstracto"
+                        <img src="./img/letters-tattoo.webp" alt="Tatuaje Abstracto"
                             class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
                     <div class="p-6 lg:p-8">
@@ -473,7 +473,7 @@
                 </div>
 
                 <div>
-                    <img src="/me-photo.jpg" alt="Artista tatuador" class="w-full h-96 object-cover rounded-lg">
+                    <img src="./img/me-photo.jpg" alt="Artista tatuador" class="w-full h-96 object-cover rounded-lg">
                 </div>
             </div>
         </div>

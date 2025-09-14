@@ -1,3 +1,4 @@
+
 // Función para abrir modales
 function openModal(id) {
   const modal = document.getElementById(id);
