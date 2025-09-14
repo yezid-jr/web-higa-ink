@@ -4,13 +4,6 @@
     { "src": "vite.config.ts", "use": "@vercel/vite" }
   ],
   "outputDirectory": "dist",
-
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/src/(.*)",
