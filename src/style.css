@@ -232,6 +232,12 @@ html {
   transition: transform 0.3s ease-in-out;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 21rem;
+  width: 75%;
+  padding-top: 1rem;
 }
 
 .mobile-menu.open {
