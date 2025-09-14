@@ -55,25 +55,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Manejo del formulario de contacto
-// document.addEventListener('DOMContentLoaded', function() {
-//   const contactForm = document.querySelector('#contact form');
-//   if (contactForm) {
-//     contactForm.addEventListener('submit', function(e) {
-//       e.preventDefault();
-      
-//       // Aquí puedes agregar tu lógica para enviar el formulario
-//       // Por ejemplo, usando fetch() para enviar a un servidor
-      
-//       // Por ahora, solo mostrar un mensaje de confirmación
-//       alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-      
-//       // Limpiar el formulario
-//       this.reset();
-//     });
-//   }
-// });
-
 // Efecto de parallax simple para el hero
 window.addEventListener('scroll', function() {
   const scrolled = window.pageYOffset;
@@ -83,8 +64,9 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Inicialización cuando se carga la página
+// Funcionalidad del menú hamburguesa
 document.addEventListener('DOMContentLoaded', function() {
+
   // Asegurar que todos los modales estén ocultos al cargar
   const modals = document.querySelectorAll('.modal');
   modals.forEach(modal => {
@@ -92,10 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   console.log('Página cargada correctamente');
-});
-
-// Funcionalidad del menú hamburguesa
-document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMenuButton = document.getElementById('close-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -153,5 +131,40 @@ document.addEventListener('DOMContentLoaded', function() {
       closeMobileMenu();
     }
   });
+
+    // Envio de datos de mi formulario a Formspree
+    const formIdea = document.querySelector('.form-idea');
+    const status = document.getElementById('status');
+
+    formIdea.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(formIdea);
+      fetch('https://formspree.io/f/mrbajjqr', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "¡Idea Enviada! Te contactaré pronto.";
+          status.className = "mt-4 text-sm font-medium text-green-500"; 
+          formIdea.reset();
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+              status.innerHTML = "Oops! Hubo un problema al enviar tu mensaje.";
+              status.className = "mt-4 text-sm font-medium text-red-500";
+            }
+          });
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! Hubo un problema al enviar tu mensaje.";
+        status.className = "mt-4 text-sm font-medium text-red-500";
+      }
+      );
+    });
 });
 
