@@ -1,4 +1,10 @@
 {
+  
+  "builds": [
+    { "src": "vite.config.ts", "use": "@vercel/vite" }
+  ],
+  "outputDirectory": "dist",
+
   "rewrites": [
     {
       "source": "/(.*)",
