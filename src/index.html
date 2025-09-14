@@ -527,14 +527,14 @@
                 <!-- Contact Form -->
                 <div class="bg-gray-800 border border-gray-700 rounded-lg p-6">
                     <h4 class="text-xl font-semibold mb-6">Envíame tu idea</h4>
-                    <form class="space-y-4" action="https://formspree.io/f/mrbajjqr" method="POST">
-                        <input type="text" placeholder="Tu nombre" required
+                    <form class="space-y-4 form-idea">
+                        <input type="text" name="name" placeholder="Tu nombre" required
                             class="w-full px-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-tattoo-red transition-colors">
-                        <input type="email" placeholder="Tu email" required
+                        <input type="email" name="email" placeholder="Tu email" required
                             class="w-full px-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-tattoo-red transition-colors">
-                        <input type="tel" placeholder="Tu teléfono"
+                        <input type="tel" name="tel" placeholder="Tu teléfono"
                             class="w-full px-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-tattoo-red transition-colors">
-                        <textarea placeholder="Describe tu idea de tatuaje..." rows="4" required
+                        <textarea placeholder="Describe tu idea de tatuaje..." rows="4" required name="message"
                             class="w-full px-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 resize-none focus:outline-none focus:border-tattoo-red transition-colors"></textarea>
                         <div class="space-y-2">
                             <label class="block text-sm font-medium text-gray-300">Foto de referencia (opcional)</label>
@@ -547,6 +547,7 @@
                             Enviar Mensaje
                         </button>
                     </form>
+                    <p id="status"></p>
                 </div>
             </div>
         </div>
