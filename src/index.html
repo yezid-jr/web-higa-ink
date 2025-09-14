@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -15,12 +14,12 @@
 <body class="bg-black text-white">
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-black/10 backdrop-blur-sm border-b-2 border-red-600/35">
-    <div class="max-w-6xl mx-auto px-2 sm:px-4">
+        <div class="max-w-6xl mx-auto px-4">
             <!-- Layout Desktop: Logo - Links - Botón -->
             <div class="hidden md:flex items-center justify-between py-4">
                 <!-- Logo izquierda (Desktop) -->
-                <div class="flex items-center gap-2">
-                    <div class="w-24 h-16 flex items-center justify-center overflow-hidden">
+                <div class="flex items-center">
+                    <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
                         <img src="./img/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
                     </div>
                     <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
@@ -50,11 +49,11 @@
                 </button>
 
                 <!-- Logo centro (Mobile) -->
-                <div class="flex items-center gap-2">
-                    <div class="w-20 h-12 flex items-center justify-center overflow-hidden">
+                <div class="flex items-center">
+                    <div class="w-25 h-15 flex items-center justify-center overflow-hidden">
                         <img src="./img/higa-logo.ico" alt="Logo Studio" class="w-full h-full object-contain">
                     </div>
-                    <h1 class="bg-tattoo-red rounded px-2 text-3xl font-japanese">.ink</h1>
+                    <h1 class="bg-tattoo-red rounded px-2 text-4xl font-japanese">.ink</h1>
                 </div>
 
                 <!-- Botón derecha (Mobile) -->
@@ -66,7 +65,7 @@
 
             <!-- Menú Mobile -->
             <div id="mobile-menu" class="mobile-menu md:hidden fixed left-0 top-0 w-64 h-full">
-                <div class="flex flex-col p-4 pt-16 bg-black/95 backdrop-blur-sm h-full overflow-y-auto">
+                <div class="flex flex-col p-6 pt-20 bg-black/95 backdrop-blur-sm">
 
                     <a href="#portfolio"
                         class="mobile-menu-link text-white hover:text-tattoo-red py-3 text-lg border-b border-gray-700">Portafolio</a>
@@ -90,34 +89,38 @@
 
     <!-- Hero Section -->
     <section class="py-30 px-4 text-center bg-gradient-to-b from-black to-gray-900">
-    <img src="./img/tattoo-machine.png" alt="Máquina de tatuar" class="hero-image mx-auto w-32 sm:w-40 md:w-56 lg:w-64 mb-4 md:mb-8">
+        <img src="./img/tattoo-machine.png" alt="Máquina de tatuar" class="hero-image">
 
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-responsive">
-                <span class="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">Sentimientos hechos</span>
-                <span class="text-tattoo-red block text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Arte</span>
+            <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6">
+                Sentimientos hechos
+                <span class="text-tattoo-red">Arte</span>
             </h2>
             <p class="text-xl text-gray-300 mb-8 max-w-1xl mx-auto leading-relaxed text-responsive">
-                <span class="block text-base sm:text-lg md:text-xl">Un tatuaje significa llevar a la piel emociones, decisiones y formas de expresión personal.</span>
-                <span class="block text-base sm:text-lg md:text-xl">Para algunos, es un acto valiente que marca un antes y un después en sus vidas.</span>
-                <span class="block text-base sm:text-lg md:text-xl">Otros, es una búsqueda de estética y estilo único.</span>
-                <span class="block text-base sm:text-lg md:text-xl">Sea cual sea tu razón, estoy aquí para ayudarte a plasmarla en tu piel con creatividad y profesionalismo.</span>
+                <span class="block text-base sm:text-lg md:text-xl">Un tatuaje significa llevar a la piel emociones,
+                    decisiones y formas de expresión personal.</span>
+                <span class="block text-base sm:text-lg md:text-xl">Para algunos, es un acto valiente que marca un antes
+                    y un después en sus vidas.</span>
+                <span class="block text-base sm:text-lg md:text-xl">Otros, es una búsqueda de estética y estilo
+                    único.</span>
+                <span class="block text-base sm:text-lg md:text-xl">Sea cual sea tu razón, estoy aquí para ayudarte a
+                    plasmarla en tu piel con creatividad y profesionalismo.</span>
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button
-                    class="bg-tattoo-red-dark hover:bg-tattoo-red text-white px-6 py-2 sm:px-8 sm:py-3 rounded-md text-base sm:text-lg font-medium transition-all duration-300 hover:scale-105 w-full sm:w-auto">
-                    Ver Portafolio
-                </button>
-                <button
-                    class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-6 py-2 sm:px-8 sm:py-3 rounded-md text-base sm:text-lg font-medium transition-all duration-300 hover:scale-105 w-full sm:w-auto">
-                    Contáctame
-                </button>
+                <a href="#portfolio"
+                        class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-8 py-3 rounded-md text-lg font-medium transition-all duration-300 flex items-center justify-center cursor-pointer">
+                        Ver Portafolio
+                </a>
+                <a href="#contact"
+                        class="bg-tattoo-red hover:bg-tattoo-red-dark text-white px-9 py-3 rounded-md text-lg font-medium transition-all duration-300 flex items-center justify-center cursor-pointer">
+                        Contáctame
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4 bg-gray-900 relative z-10">
+    <section id="portfolio" class="py-30 px-4 bg-gray-900 relative z-10">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h3 class="text-4xl font-bold mb-4 text-responsive">Mi Trabajo</h3>
@@ -132,7 +135,7 @@
                     onclick="openModal('modal1')">
                     <img src="./img/anime-tattoo.webp" alt="Tatuaje Geométrico"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -141,7 +144,7 @@
                     onclick="openModal('modal2')">
                     <img src="./img/blackwork-tattoo.webp" alt="Tatuaje Realista"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -150,7 +153,7 @@
                     onclick="openModal('modal3')">
                     <img src="./img/small-tattoo.webp" alt="Tatuaje Floral"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -159,7 +162,7 @@
                     onclick="openModal('modal4')">
                     <img src="./img/dark-tattoo.webp" alt="Tatuaje Tradicional"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -168,7 +171,7 @@
                     onclick="openModal('modal5')">
                     <img src="./img/flash-tattoo.webp" alt="Tatuaje Minimalista"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -177,7 +180,7 @@
                     onclick="openModal('modal6')">
                     <img src="./img/letters-tattoo.webp" alt="Tatuaje Abstracto"
                         class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
-                    <div class="gallery-overlay absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                    <div class="gallery-overlay">
                         <span class="text-white font-semibold text-xs sm:text-base">Ver Detalles</span>
                     </div>
                 </div>
@@ -187,41 +190,34 @@
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal1')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
-                        <img src="./img/anime-tattoo.webp" alt="Tatuaje Geométrico"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                        <img src="./img/anime-tattoo.webp" alt="Tatuaje Anime"
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Tatuaje Geométrico</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Anime</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
-                                <p>Geométrico minimalista con líneas precisas</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
+                                <p>Anime, para amantes del anime como yo :)</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Antebrazo</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>2-3 horas</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Diseño geométrico inspirado en formas sagradas, perfecto para quienes buscan un estilo moderno y elegante.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>Los tatuajes de anime son una forma de llevar a esos personajes que nos gustan o nos identificamos,
+                                    Tatuarse un personaje de anime es transformar nuestros gustos en una parte de nuestra propia identidad.</p>
                             </div>
                         </div>
-                        <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                        <!-- <button
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -229,41 +225,34 @@
     </div>
 
     <div id="modal2" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal2')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
                         <img src="./img/blackwork-tattoo.webp" alt="Tatuaje Realista"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Retrato Realista</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">blackwork</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
-                                <p>Realismo en blanco y negro</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
+                                <p>Lineas y Puntillismo</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Brazo completo</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>6-8 horas (2-3 sesiones)</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Retrato fotorrealista con técnica de sombreado avanzada. Máxima fidelidad y expresión emocional.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>El estilo blackwork se caracteriza por el uso exclusivo de tinta negra, 
+                                    logrando contrastes potentes y diseños que van desde lo minimalista hasta lo más complejo.</p>
                             </div>
                         </div>
-                        <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                        <!-- <button
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -271,41 +260,34 @@
     </div>
 
     <div id="modal3" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal3')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
                         <img src="./img/small-tattoo.webp" alt="Tatuaje Floral"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Diseño Floral</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Minimalista</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
-                                <p>Floral ornamental con detalles delicados</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
+                                <p>Fine line y Abstracto</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Muslo</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>4-5 horas</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Composición floral elegante con rosas y elementos ornamentales. Delicadeza y fuerza.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>Los tatuajes minimalistas se centran en la simplicidad, el simbolismo y sobre todo la elegancia, 
+                                    siendo ideales para quienes buscamos algo discreto pero con un fuerte significado personal.</p>
                             </div>
                         </div>
-                        <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                        <!-- <button
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -313,41 +295,33 @@
     </div>
 
     <div id="modal4" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal4')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
                         <img src="./img/dark-tattoo.webp" alt="Tatuaje Tradicional"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Estilo Tradicional</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Tatuajes Dark</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
-                                <p>Traditional americano con colores vibrantes</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
+                                <p>Blackwork oscuro y Black & Grey</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Pecho</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>3-4 horas</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Diseño clásico americano con líneas bold y colores sólidos. Atemporal y tradicional.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>El estilo dark en tatuajes transmite misterio, intensidad y una estética sombría que conecta con lo oculto y lo profundo del ser.</p>
                             </div>
                         </div>
-                        <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                        <!-- <button
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -355,39 +329,34 @@
     </div>
 
     <div id="modal5" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal5')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
                         <img src="./img/flash-tattoo.webp" alt="Tatuaje Minimalista"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Minimalista</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Flash Tattoo</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
                                 <p>Minimalista con líneas finas</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Muñeca</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>1-2 horas</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Diseño simple pero poderoso. "Menos es más" en arte corporal.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>Los flash tattoos son una actividad especial en la que mis clientes pueden elegir entre varios diseños pequeños, 
+                                    rápidos y versátiles, listos para tatuar en el momento. 
+                                    La idea es que cada cliente pueda hacerse uno o varios tatuajes en la misma sesión, 
+                                    a un costo accesible y en menor tiempo.</p>
                             </div>
                         </div>
                         <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
                         </button>
                     </div>
@@ -397,39 +366,31 @@
     </div>
 
     <div id="modal6" class="modal fixed inset-0 bg-black/90 z-[100] items-center justify-center p-4">
-    <div class="modal-content bg-gray-900 rounded-lg max-w-[16rem] sm:max-w-[20rem] md:max-w-[24rem] w-full max-h-[60vh] overflow-y-auto p-1 sm:p-2">
+        <div class="modal-content bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="relative">
                 <button onclick="closeModal('modal6')"
-                    class="absolute top-0 right-0 mt-2 mr-2 z-10 bg-red-600 hover:bg-red-700 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    class="absolute top-4 right-4 z-10 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full transition-colors">
                     ✕
                 </button>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative">
                         <img src="./img/letters-tattoo.webp" alt="Tatuaje Abstracto"
-                            class="w-full h-24 sm:h-32 object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
+                            class="w-full h-64 lg:h-full object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
                     </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="text-base sm:text-lg font-bold mb-2 text-white">Arte Abstracto</h3>
-                        <div class="space-y-2 text-gray-300 text-xs sm:text-sm">
+                    <div class="p-6 lg:p-8">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Letras</h3>
+                        <div class="space-y-4 text-gray-300">
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Estilo:</h4>
-                                <p>Abstracto contemporáneo</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Estilo:</h4>
+                                <p>Lettering</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Ubicación:</h4>
-                                <p>Espalda</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Tiempo estimado:</h4>
-                                <p>5-6 horas</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-red-500 mb-1 text-xs sm:text-sm">Descripción:</h4>
-                                <p>Expresión artística única con formas y texturas. Interpretación personal.</p>
+                                <h4 class="font-semibold text-red-500 mb-2">Descripción:</h4>
+                                <p>El lettering es el arte de tatuar palabras, frases o nombres con un estilo tipográfico único y personalizado.</p>
                             </div>
                         </div>
                         <button
-                            class="mt-3 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-xs sm:text-sm transition-colors">
+                            class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                             Consultar Precio
                         </button>
                     </div>
@@ -439,26 +400,30 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <section id="about" class="py-30 px-4 bg-gradient-to-b from-gray-900 to-black">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Sobre Mí</h3>
-                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        <span class="block text-base sm:text-lg mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odio itaque, cumque totam dolore, similique ratione tempore unde possimus saepe amet, modi temporibus minus alias corporis nihil omnis ducimus sint!</span>
+                    <h3 class="text-4xl font-bold mb-6">Sobre Mí</h3>
+                    <p class="text-gray-300 text-base mb-6 leading-relaxed">
+                        Soy Higa, me gusta transformar ideas en arte sobre la piel. 
+                        Mi camino en el tatuaje empezó por gusto personal y con el tiempo se convirtió en una forma de expresión y de 
+                        conexión con las personas.
                     </p>
-                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                        <span class="block text-base sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, harum ex? Repellat, doloremque vitae cum modi voluptas esse facere, quis vel placeat aliquid reiciendis, beatae temporibus! Deserunt, hic! Exercitationem, accusamus.</span>
+                    <p class="text-gray-300 text-base mb-8 leading-relaxed">
+                        Trabajo con diferentes estilos como blackwork, minimalismo, anime, dark, puntillismo y lettering y adaptando cada piza
+                        al gusto del cliente.
+                        Mi objetivo es que cada tatuaje no solo luzca bien, sino que resuene con el cliente y le genere orgullo.
                     </p>
 
                     <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="text-center">
-                            <div class="text-xl sm:text-2xl md:text-3xl font-bold text-tattoo-red mb-1">150+</div>
-                            <div class="text-gray-400 text-xs sm:text-sm">Tatuajes Realizados</div>
+                            <div class="text-3xl font-bold text-tattoo-red mb-2">150+</div>
+                            <div class="text-gray-400">Tatuajes Realizados</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-xl sm:text-2xl md:text-3xl font-bold text-tattoo-red mb-1">5</div>
-                            <div class="text-gray-400 text-xs sm:text-sm">Años de Experiencia</div>
+                            <div class="text-3xl font-bold text-tattoo-red mb-2">5</div>
+                            <div class="text-gray-400">Años de Experiencia</div>
                         </div>
                     </div>
                 </div>
@@ -470,45 +435,45 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-    <div class="max-w-4xl mx-auto">
+    <section id="contact" class="py-30 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Contacto</h3>
-                <p class="text-gray-400 text-sm sm:text-base md:text-lg">
+                <h3 class="text-4xl font-bold mb-4">Contacto</h3>
+                <p class="text-gray-400 text-lg">
                     ¿Listo para tu próximo tatuaje? Hablemos de tu idea
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Contact Info -->
-                <div class="space-y-4 sm:space-y-6">
-                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-3 sm:p-6 flex items-center space-x-2 sm:space-x-4">
-                        <div class="w-6 h-6 sm:w-10 sm:h-10 bg-tattoo-red rounded-full flex items-center justify-center">
-                            <span class="text-white text-xs sm:text-lg">📞</span>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-tattoo-red rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">📞</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold mb-0.5 text-xs sm:text-base">Teléfono</h4>
-                            <p class="text-gray-400 text-xs sm:text-base">+57 3052201926</p>
+                            <h4 class="font-semibold mb-1">Teléfono</h4>
+                            <p class="text-gray-400">+57 3052201926</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-3 sm:p-6 flex items-center space-x-2 sm:space-x-4">
-                        <div class="w-6 h-6 sm:w-10 sm:h-10 bg-tattoo-red rounded-full flex items-center justify-center">
-                            <span class="text-white text-xs sm:text-lg">📧</span>
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-tattoo-red rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">📧</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold mb-0.5 text-xs sm:text-base">Email</h4>
-                            <p class="text-gray-400 text-xs sm:text-base">info@studio.com</p>
+                            <h4 class="font-semibold mb-1">Email</h4>
+                            <p class="text-gray-400">info@studio.com</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-3 sm:p-6 flex items-center space-x-2 sm:space-x-4">
-                        <div class="w-6 h-6 sm:w-10 sm:h-10 bg-tattoo-red rounded-full flex items-center justify-center">
-                            <span class="text-white text-xs sm:text-lg">🕒</span>
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-tattoo-red rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">🕒</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold mb-0.5 text-xs sm:text-base">Horarios</h4>
-                            <p class="text-gray-400 text-xs sm:text-base">Lun - Sáb: 10:00 - 20:00</p>
+                            <h4 class="font-semibold mb-1">Horarios</h4>
+                            <p class="text-gray-400">Lun - Sáb: 10:00 - 20:00</p>
                         </div>
                     </div>
                 </div>
@@ -528,15 +493,14 @@
                         <div class="space-y-2">
                             <label class="block text-sm font-medium text-gray-300">Foto de referencia (opcional)</label>
                             <input type="file" accept="image/*" id="photo-upload"
-                                class="w-full px-1.5 py-1.5 sm:px-3 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg text-white file:mr-1 sm:file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs sm:file:text-sm file:bg-red-600 file:text-white hover:file:bg-red-700 file:cursor-pointer focus:outline-none focus:border-red-600 transition-colors">
+                                class="w-full px-3 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:bg-red-600 file:text-white hover:file:bg-red-700 file:cursor-pointer focus:outline-none focus:border-red-600 transition-colors">
                             <p class="text-xs text-gray-400">Formatos: JPG, PNG, GIF (máx. 5MB)</p>
                         </div>
                         <button type="submit"
-                            class="w-full bg-tattoo-red hover:bg-tattoo-red-dark text-white py-1.5 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 text-xs sm:text-base">
+                            class="w-full bg-tattoo-red hover:bg-tattoo-red-dark text-white py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105">
                             Enviar Mensaje
                         </button>
                     </form>
-                    <p id="status"></p>
                 </div>
             </div>
         </div>
@@ -545,21 +509,21 @@
     <!-- Footer -->
     <footer class="bg-black border-t border-gray-800 py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-            <div class="flex flex-wrap justify-center gap-4 mb-4">
+            <div class="flex justify-center space-x-6 mb-6">
                 <a href="#"
-                    class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
-                    <span class="text-white text-base sm:text-lg">f</span>
+                    class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
+                    <span class="text-white">f</span>
                 </a>
                 <a href="#"
-                    class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
-                    <span class="text-white text-base sm:text-lg">📷</span>
+                    class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
+                    <span class="text-white">📷</span>
                 </a>
                 <a href="#"
-                    class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
-                    <span class="text-white text-base sm:text-lg">💬</span>
+                    class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tattoo-red transition-colors duration-300">
+                    <span class="text-white">💬</span>
                 </a>
             </div>
-            <p class="text-gray-400 text-xs sm:text-sm">© Todos los derechos reservados.</p>
+            <p class="text-gray-400">© Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
