@@ -19,6 +19,10 @@ function closeModal(id) {
   }
 }
 
+// Exponer funciones al ámbito global para el HTML
+window.openModal = openModal;
+window.closeModal = closeModal;
+
 // Cerrar modal al hacer clic fuera del contenido
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains('modal')) {
